@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta anme="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css" >
+</head>
+<body>
+    <!-- 导航  inverted(黑色) -->
+    <nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini">
+        <div calss="ui container">
+             <!-- secondary（去分割线）-->
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
+                <div class="right m-item  item m-mobile-hide">
+                    <!--transparent(透明)-->
+                    <div class="ui icon inverted transparent  input">
+                        <input type="text" placeholder="Search......">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!--中间部分-->
+    <div class=" m-padded-tb-big">
+        <!--容器适应屏幕大小-->
+        <div class="ui m-container">
+            <div class="ui stackable grid">
+                <!--左边博客列表-->
+                <div class="eleven wide column">
+                    <!--header-->
+                    <div class="ui top attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <h3 class="ui teal header">博客</h3>
+                            </div>
+                            <div class="right aligned column">
+                                共<h2 class="ui orange header m-inline-block m-text-thin"> 14 </h2>篇
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--content-->
+                    <div class="ui attached  segment">
+                        <!--conter的左右部分-->
+                        <div class="ui padded vertical segment m-padded-tb-large">
+                            <div class="ui mobile reversed stackable grid">
+
+                                <div class=" eleven wide column">
+                                    <h3 class="ui header">你真的了解我吗？</h3>
+                                    <p class="m-text">
+                                        天将降大任于斯人也，必先苦其心志，饿其体肤，空乏其身，增益其所不能！人之心，不可测。
+                                        人之欲，不可知，人所求，不可理。
+                                    </p>
+                                    <div class="ui stackable grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/1006/100/100" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">小仙女</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2019-09-12
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>2345
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="five wide column" >
+                                   <a href="#" target="_blank">
+                                       <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui rounded image">
+                                   </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui padded vertical segment m-padded-tb-large">
+                            <div class="ui stackable grid">
+
+                                <div class=" eleven wide column">
+                                    <h3 class="ui header">你真的了解我吗？</h3>
+                                    <p class="m-text">
+                                        天将降大任于斯人也，必先苦其心志，饿其体肤，空乏其身，增益其所不能！人之心，不可测。
+                                        人之欲，不可知，人所求，不可理。
+                                    </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/1006/100/100" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">小仙女</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2019-09-12
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>2345
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="five wide column" >
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ui padded vertical segment m-padded-tb-large">
+                            <div class="ui stackable grid">
+
+                                <div class=" eleven wide column">
+                                    <h3 class="ui header">你真的了解我吗？</h3>
+                                    <p class="m-text">
+                                        天将降大任于斯人也，必先苦其心志，饿其体肤，空乏其身，增益其所不能！人之心，不可测。
+                                        人之欲，不可知，人所求，不可理。
+                                    </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/1006/100/100" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">小仙女</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2019-09-12
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>2345
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="five wide column" >
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ui padded vertical segment m-padded-tb-large">
+                            <div class="ui stackable grid">
+
+                                <div class=" eleven wide column">
+                                    <h3 class="ui header">你真的了解我吗？</h3>
+                                    <p class="m-text">
+                                        天将降大任于斯人也，必先苦其心志，饿其体肤，空乏其身，增益其所不能！人之心，不可测。
+                                        人之欲，不可知，人所求，不可理。
+                                    </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/1006/100/100" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">小仙女</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2019-09-12
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>2345
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="five wide column" >
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ui padded vertical segment m-padded-tb-large">
+                            <div class="ui stackable grid">
+
+                                <div class=" eleven wide column">
+                                    <h3 class="ui header">你真的了解我吗？</h3>
+                                    <p class="m-text">
+                                        天将降大任于斯人也，必先苦其心志，饿其体肤，空乏其身，增益其所不能！人之心，不可测。
+                                        人之欲，不可知，人所求，不可理。
+                                    </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/1006/100/100" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">小仙女</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2019-09-12
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>2345
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="five wide column" >
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--中间内容的footer-->
+                    <div class="ui bottom attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <a href="#" class="ui mini teal basic button">上一页</a>
+                            </div>
+                            <div class="right aligned column ">
+                                <a href="#" class="ui mini teal basic button">下一页</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                <!--右边的top-->
+                <div class="five wide column">
+                    <!--分类-->
+                    <div class="ui segments">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                              <div class="column">
+                                <i class="idea icon"></i>分类
+                              </div>
+                              <div class="right aligned column">
+                                <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--标签-->
+                    <div class="ui segment m-margin-top-large">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="tags icon"></i>标签
+                                </div>
+                                <div class="right aligned column">
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                法 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                法 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                方法论 <div class="detail">23</div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <!--最新推荐-->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="ui secondary segment ">
+                            <i class="bookmark icon"></i>最新推荐
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black m-text-thin">用户故事(User Story)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black m-text-thin">用户故事(User Story)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black m-text-thin">用户故事(User Story)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black m-text-thin">用户故事(User Story)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black m-text-thin">用户故事(User Story)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black m-text-thin">用户故事(User Story)</a>
+                        </div>
+                    </div>
+                    <!--二维码-->
+                    <h4 class="ui horizontal divider header">扫码关注我</h4>
+                    <div class="ui centered card" style="width: 11em">
+                        <img src="../static/images/3.png" th:src="@{/images/3.png}" class="ui rounded image" >
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   <!--   底部 vertical去圆角-->
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive" >
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="two wide column ">
+                    <div class="item ">
+                        <img src="../static/images/1.jpeg" th:src="@{images/1.jpeg}" class="ui rounded image" alt="" style="width: 130px ">
+                    </div>
+                </div>
+                <div class="four wide column m-text-lined m-text-spaced m-opacity-mini">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事</a>
+                        <a href="#" class="item">最新咨询</a>
+                    </div>
+                </div>
+                <div class="four wide column m-text-lined m-text-spaced m-opacity-mini">
+                    <h4 class="ui inverted header">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email:lirenml@163.com</a>
+                        <a href="#" class="item">QQ:6834288</a>
+                    </div>
+                </div>
+                <div class="six wide column m-text-lined m-text-spaced m-opacity-mini">
+                    <h4 class="ui inverted header">Blog</h4>
+                    <p m-text-lined m-text-spaced m-opacity-mini>
+                        这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这的人有所帮助.......
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div >
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-lined m-text-spaced m-opacity-tiny ui center aligned container" >
+                hshdflgnl jfdlgjno jgioneoi jfgojeogn gjroh
+            </p>
+        </div>
+    </footer>
+
+
+   <!--/*/<th:block th:replace="_fragments :: script" >/*/-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <!--/*/ </th:block>/*/-->
+
+    <script>
+        $('.menu.toggle').click(function(){
+            $( '.m-item ').toggleClass('m-mobile-hide');
+        });
+    </script>
+</body>
+</html>
